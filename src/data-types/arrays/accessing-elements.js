@@ -7,6 +7,7 @@ const cities = ['London', 'Shanghai', 'New York', 'Delhi', 'Kuala Lumpur']
 const names = ["Bob", "Jane", "Joanna"]
 console.log('\nExercise 1:')
 console.log(names)
+
 // Set fourthCity to the 4th element in the cities array
 const fourthCity = cities[3]
 console.log('\nExercise 2:')

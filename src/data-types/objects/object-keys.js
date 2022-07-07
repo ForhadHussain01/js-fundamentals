@@ -18,19 +18,29 @@ const isbn13 = '978-0132350884'
 
 // Set this to the book name
 const name = book.name
+console.log('\nExercise 1:')
+console.log(name)
 
 // Set this to the isbn 10 value
 const isbn10 = book.isbn.isbn10
+console.log('\nExercise 2:')
+console.log(isbn10)
 
-book.category = 'Programming'
+book.category = "Programming"
+console.log(book)
 
 book.pages = 464
+console.log('\nExercise 3:')
+console.log(book)
 
-book.isbn.isbn13 = ('978-0132350884')
+book.isbn.isbn13 = "978-0132350884"
+console.log(book)
 
 delete book.dimensions
+console.log(book)
 
-delete book.isbn.asin 
+delete book.isbn.asin
+console.log(book)
 
 // Do not edit this exported object
 module.exports = {
