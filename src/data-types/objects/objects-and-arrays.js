@@ -23,17 +23,26 @@ const basket = {
 
 // Set this variable to the length of the baskets voucher codes array
 const numberOfVoucherCodes = basket.voucherCodes.length
+console.log('\nExercise 1:')
+console.log(numberOfVoucherCodes)
 
 // Set this variable to the first element in of the baskets voucher codes array
 const firstVoucherCode = basket.voucherCodes[0]
+console.log('\nExercise 2:')
+console.log(firstVoucherCode)
 
 basket.items[0].price = 2
+console.log(basket)
 
-basket.items[2] = {
-  name: 'Oranges',
-  quantity: 4,
-  price: 0.75
-}
+basket.items.push(
+  {
+    name: "Oranges",
+    quantity: 4,
+    price: 0.75
+    
+  }
+)
+console.log(basket)
 
 // Do not edit this exported object
 module.exports = {
