@@ -2,6 +2,11 @@
 function isHello (val1) {
 
   // TODO: write code in this function body to pass the tests
+  if (val1 === "Hello" ){
+
+    return true
+  }
+  return false
 
 }
 
@@ -9,6 +14,10 @@ function isHello (val1) {
 function isNotHello (val1) {
 
   // TODO: write code in this function body to pass the tests
+  if (val1 !== "Hello"){
+    return true
+  }
+  return false
 
 }
 
@@ -17,6 +26,10 @@ function isNotHello (val1) {
 function isLongerThan (val1, val2) {
 
   // TODO: write code in this function body to pass the tests
+  if (val1.length > val2.length){
+    return true
+  }
+  return false
 
 }
 
@@ -26,12 +39,27 @@ function isLongerThan (val1, val2) {
 function hasOddNumberVowels (val1) {
 
   // TODO: write code in this function body to pass the tests
+  const vowels = ["a", "e", "i", "o", "u"]
+  let numOfVowels = 0
 
+  for ( let i = 0; i < val1.length; i++){
+    if (vowels.includes(val1[i].toLowerCase())){
+      numOfVowels + numOfVowels
+    }
+  }
+  if (numOfVowels % 2){
+    return true
+  }
+  return false
 }
 
 // this function should return the middle character of a string if it has an odd number
 // of characters. If there are an even number of characters the function should return
 // the middle two letters
+
+
+
+
 
 function getMiddleLetter (val1) {
   // TODO: write code in this function body to pass the tests
@@ -50,6 +78,22 @@ function getMiddleLetter (val1) {
 function seasonForMonth (monthName) {
 
   // TODO: write code in this function body to pass the tests
+let season = " "
+
+if (monthName === "March" || monthName === "April" || monthName === "May"){
+  season = "Spring";
+} else if ( monthName === "June" || monthName === "July" || monthName === "August"){
+  season = "Summer";
+} else if ( monthName === "September" || monthName === "October" || monthName === "November"){
+  season = "Autumn";
+} else if (monthName === "December" || monthName === "January" || monthName === "February"){
+  season = "Winter";
+} else {
+  season = ""
+}
+
+return season
+
 }
 
 module.exports = {
