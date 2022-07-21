@@ -8,6 +8,10 @@
 //
 // TODO: write code below
 
+function addingByOne( number){
+  return number + 1
+}
+
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
 //
@@ -18,6 +22,11 @@
 // Aiyana | Hi, Aiyana :)
 //
 // TODO: write code below
+
+function smiley(name) {
+  const newName = name[0].toUpperCase() + name.slice(1)
+  return "Hi," + " " + newName + " " + ":)"
+}
 
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {

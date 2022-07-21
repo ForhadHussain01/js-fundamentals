@@ -10,6 +10,19 @@
 //
 // TODO: write code below
 
+function range( lower, upper){
+    let rangeArray = []
+  
+    for (let i = lower; i <= upper; i++) {
+      rangeArray.push(i)
+    }
+    
+    return rangeArray
+  
+}
+
+
+
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
 // marks appended to the end. The number of exclamation marks should be
@@ -21,6 +34,20 @@
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+
+function transformString(string, number) {
+  let text = string.toUpperCase()
+  
+  for (let i = 0; i < number; i++) {
+      text = text + "!"
+   
+    }
+    
+    return text
+}
+
+
+
 
 // change the exported value to be the name of the function you defined
 module.exports = {
